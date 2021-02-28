@@ -32,9 +32,9 @@
 
                 <?php
                 for ($i = $reservation_timetable[0]; $i <= $reservation_timetable[1]; $i += $reservation_duration) {
-                    print_r($existing_reservations);
+                    dd($existing_reservations);
                     if (isset($existing_reservations[$i])) {
-                        print_r("second -> " . $existing_reservations);
+                        dd("second -> " . $existing_reservations);
                         if ($existing_reservations[$i] >= $reservation_limit) {
 
                             echo
