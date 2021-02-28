@@ -17,7 +17,7 @@ class Reservations extends Migration
             $table->id();
             $table->string('email');
             $table->date('selected_day');
-            $table->char('selected_hour', 50);
+            $table->integer('selected_hour');
             $table->text('token');
             $table->dateTime('created_at')->useCurrent();
         });
