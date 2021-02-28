@@ -9,5 +9,8 @@ Réalisation d'un site de réservation en Laravel.
 3. lancer le seeder `php artisan db:seed`
 4. Démarrer le serveur: `php artisan serve`
 
+*Attention, il est important de renseigner le `APP_URL` de l'application dans le `.env`* 
+
 ## Démo
 
+Lien de la démo: [https://reset-reservation.herokuapp.com/](https://reset-reservation.herokuapp.com/)
