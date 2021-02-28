@@ -20,7 +20,7 @@
     </ul>
     <br><br>
 
-    <a href="http://localhost:8000/reservation/annulation/{{ $token }}" style="color: #cecece;border: 0px;font-family: monospace;">Annuler la réservation</a>
+    <a href="{{ $url }}/reservation/annulation/{{ $token }}" style="color: #cecece;border: 0px;font-family: monospace;">Annuler la réservation</a>
 
 </body>
 

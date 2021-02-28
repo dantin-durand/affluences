@@ -56,7 +56,8 @@ class ReservationController extends Controller
             'selected_hour' => $request->get('selected_hour'),
             'selected_day' => $formatedDate,
             'token' => sha1(mt_rand(1, 90000) . 'SALT'),
-            'subject' => "Nouvelle réservation le: " . $request->get('selected_day') . " à " . $request->get("selected_hour"),
+            'subject' => "Nouvelle réservation",
+            'url' => env('APP_URL', null),
         ];
 
 
