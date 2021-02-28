@@ -29,8 +29,10 @@
 
             <h5>Craineaux horaires: </h5>
             <div class="horaires">
+
                 <?php
                 for ($i = $reservation_timetable[0]; $i <= $reservation_timetable[1]; $i += $reservation_duration) {
+                    ddd($existing_reservations);
                     if (isset($existing_reservations[$i])) {
                         if ($existing_reservations[$i] >= $reservation_limit) {
 
