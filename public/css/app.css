@@ -1,0 +1,422 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html {
+    box-sizing: border-box;
+}
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+img,
+video {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* END RESET */
+
+body {
+    background-color: #060040;
+    color: #fff;
+    margin: 0;
+}
+@font-face {
+    font-family: "gameplay";
+    src: url("../font/gameplay.ttf");
+}
+h1 {
+    font-family: "gameplay";
+}
+
+.title-name {
+    color: #fffa0a;
+    text-shadow: 0px 0px 13px #fffa0a69;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+#header {
+    height: 80vh;
+    width: 100%;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+#main {
+    background-image: url("../img/pacman.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 600px;
+    min-height: 100vh;
+}
+
+.header-section {
+    height: 100%;
+    width: 100%;
+    background-color: #060040e0;
+    display: flex;
+    align-items: center;
+}
+
+.header-section > div {
+    width: 100%;
+    text-align: center;
+}
+
+.header-section form {
+    display: flex;
+    justify-content: center;
+}
+
+.header-section form > input {
+    width: 20%;
+    text-align: center;
+    height: 50px;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.header-section p {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.label {
+    text-decoration: underline;
+}
+
+.button {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 20px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.1s all ease-in;
+    box-shadow: 0px 0px #fffa0a;
+    background-color: #fffa0a;
+    border: 0px;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 3px 3px #bebb07;
+}
+
+.spacer {
+    height: 1px;
+    width: 100px;
+    background-color: #bebb07;
+    margin: 20px auto;
+}
+
+.ouverture {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    padding-top: 20px;
+}
+
+.ouverture > strong {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.error {
+    font-family: monospace;
+    color: #d84b4b;
+    font-size: 12px !important;
+    margin: 20px;
+}
+
+#about {
+    padding: 5%;
+    margin: 5% 20% 10%;
+    border: 10px solid yellow;
+}
+
+#about > p {
+    font-family: monospace;
+    margin: 40px 0;
+    line-height: 20px;
+}
+
+#map {
+    margin: 20% 20% 10%;
+}
+
+#map > iframe {
+    width: 100%;
+    height: 500px;
+}
+.success {
+    color: #fff;
+    padding: 10px 20px;
+    font-family: monospace;
+    text-align: center;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #29b629;
+}
+
+#footer {
+    background-color: #040029;
+    padding: 30px;
+}
+
+#footer > p {
+    font-family: monospace;
+    text-align: right;
+}
+
+#nav {
+    padding: 20px 50px;
+    background-color: #040029;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav > a {
+    text-decoration: none;
+}
+
+#nav > p {
+    font-family: monospace;
+    font-size: 20px;
+}
+
+#reservation {
+    padding: 5%;
+    margin: 5% 20% 10%;
+    border: 10px solid yellow;
+    background-color: #060040e0;
+}
+
+h4 {
+    font-family: "gameplay";
+    text-align: center;
+    font-size: 20px;
+}
+
+h5 {
+    font-family: monospace;
+    font-size: 20px;
+}
+
+#reservation h5 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.horaires {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.horaires > p {
+    background-color: #fffa0a;
+    margin: 10px;
+    color: #000;
+    padding: 10px 20px;
+    font-family: "gameplay";
+}
+
+.horaires > p > input {
+    height: 15px;
+    width: 15px;
+}
+
+.horaires > p > label {
+    margin-top: 10px;
+}
+
+.email-input > label {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.email-input > input {
+    width: 50%;
+    border: 3px solid #fffa0a;
+    padding: 10px;
+    color: #fff;
+    background-color: transparent;
+    margin: 0 10px;
+}
+
+.email-input > input::placeholder {
+    color: #ffffffaa;
+    font-family: monospace;
+}
+
+#reservation .button {
+    float: right;
+}
+
+.date-input > label {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: monospace;
+    font-size: 20px;
+}
+.date-input > input {
+    width: 30%;
+    text-align: center;
+    height: 50px;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+#reservation .error,
+.error-label {
+    color: #fff;
+    padding: 10px 20px;
+    font-family: monospace;
+    text-align: center;
+    max-width: 500px;
+    margin: 10px auto;
+    background-color: #d84b4b;
+}
+
+.reservation-container {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.reservation-container p {
+    font-family: monospace;
+}
+
+.validation-remove-reservation {
+    font-family: monospace;
+    text-align: right;
+}
