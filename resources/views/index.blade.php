@@ -100,11 +100,34 @@
         <h1>A PROPOS</h1>
         <p>{{ $long_description }} </p>
         <p>Adresse : {{ $address }} </p>
+        <p>{{ $lng }}</p>
     </section>
     <section id="map">
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d656.1823468282673!2d2.3478323292295036!3d48.86337048096053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e19042b1305%3A0xf2a23000a6c66d6d!2sReset!5e0!3m2!1sfr!2sfr!4v1614461600101!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div id="mapgoogle"></div>
     </section>
 </main>
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6t6Idt0Rg6r8xNw0gzyFCIdRV5P0555M&callback=initMap">
+</script>
+<script>
+    let map;
+    let marker;
+    const lat = '{{ $lat }}';
+    const lng = '{{ $lng }}';
 
+    function initMap() {
+        const position = {
+            lat: Number(lat),
+            lng: Number(lng)
+        };
+
+        map = new google.maps.Map(document.getElementById("mapgoogle"), {
+            center: position,
+            zoom: 8,
+        });
+        marker = new google.maps.Marker({
+            position: position,
+            map: map,
+        });
+    }
+</script>
 @endsection

@@ -60,7 +60,20 @@
                 <label for="email">Adresse mail</label>
                 <input type="email" name="email" id="email" placeholder="game@reset.com" value="{{ old('email') }}" />
             </div>
-            <button type="submit" class="button">Réserver</button>
+            <br>
+            <br>
+            <div class="validation-remove-reservation">
+                <input name="cgu" type="checkbox" id="cgu">
+
+                <label for="cgu">j'ai lu et j'accepte les conditions générales d'utilisation</label>
+                <br>
+                <br>
+
+                <br>
+                <br>
+                <button type="submit" class="button">Réserver</button>
+            </div>
+
 
         </form>
     </section>

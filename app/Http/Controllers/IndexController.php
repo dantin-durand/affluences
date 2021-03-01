@@ -18,6 +18,8 @@ class IndexController extends Controller
             'long_description' => $configs['long_description'],
             'days' => $configs['reservation_days'],
             'hours' => $configs['reservation_timetable'],
+            'lat' => $configs['lat'],
+            'lng' => $configs['lng'],
         ];
         return view('index', $params);
     }

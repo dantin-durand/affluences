@@ -147,6 +147,9 @@ return [
         'confirm_annulation' => [
             'required' => "Veuillez confirmer l'annulation.",
         ],
+        'cgu' => [
+            'required' => "Veuillez accepter les CGU.",
+        ],
 
     ],
 

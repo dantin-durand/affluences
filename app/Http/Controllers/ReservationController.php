@@ -47,6 +47,7 @@ class ReservationController extends Controller
             'email' => 'required|email',
             'selected_day' => ['required', 'date', new ReservationDayLimits, 'after_or_equal:now'],
             'selected_hour' => ['required', 'numeric', new ReservationAmoutLimit($request->get('selected_day'), $request->get('selected_hour'))],
+            'cgu' => 'required',
         ]);
 
         $formatedDate =  date("d/m/Y", strtotime($request->get('selected_day')));

@@ -269,7 +269,7 @@ h1 {
     margin: 20% 20% 10%;
 }
 
-#map > iframe {
+#map > div {
     width: 100%;
     height: 500px;
 }
