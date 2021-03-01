@@ -9,7 +9,7 @@ Réalisation d'un site de réservation en Laravel.
 3. lancer le seeder `php artisan db:seed`
 4. Démarrer le serveur: `php artisan serve`
 
-*Attention, il est important de renseigner le `APP_URL` de l'application dans le `.env`* 
+*Attention, il est important de renseigner le `APP_URL` de l'application  et le `MAP_API_KEY` dans le `.env`* 
 
 ## Démo
 
