@@ -106,7 +106,7 @@
         <div id="mapgoogle"></div>
     </section>
 </main>
-<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6t6Idt0Rg6r8xNw0gzyFCIdRV5P0555M&callback=initMap">
+<script async src="https://maps.googleapis.com/maps/api/js?key={{ $api_key }}&callback=initMap">
 </script>
 <script>
     let map;

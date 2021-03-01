@@ -20,6 +20,7 @@ class IndexController extends Controller
             'hours' => $configs['reservation_timetable'],
             'lat' => $configs['lat'],
             'lng' => $configs['lng'],
+            'api_key' => env('MAP_API_KEY', null),
         ];
         return view('index', $params);
     }
