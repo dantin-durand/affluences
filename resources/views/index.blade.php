@@ -100,7 +100,6 @@
         <h1>A PROPOS</h1>
         <p>{{ $long_description }} </p>
         <p>Adresse : {{ $address }} </p>
-        <p>{{ $lng }}</p>
     </section>
     <section id="map">
         <div id="mapgoogle"></div>
