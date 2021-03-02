@@ -28,6 +28,10 @@ class ReservationAmoutLimit implements Rule
      */
     public function passes($attribute, $value)
     {
+        $reservation_limit = Config::get('information.reservation_timetable');
+        if (intval($value) < $reservation_limit[0] || intval($value) > end($reservation_limit)) {
+            return false;
+        }
 
         $reservationArrayQuerry = DB::table('affluences')
             ->select('*')

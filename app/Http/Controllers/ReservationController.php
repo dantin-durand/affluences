@@ -82,6 +82,7 @@ class ReservationController extends Controller
     public function removeReservation(Request $request)
     {
         $configs = Config::get('information');
+
         $reservationArray = DB::select('select * from affluences where token = ?', [$request->token]);
         if (!$reservationArray) {
 
