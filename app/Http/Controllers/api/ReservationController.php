@@ -133,6 +133,26 @@ class ReservationController extends Controller
     }
 
     /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function showReservations(Request $request)
+    {
+        $reservationsQuerry = DB::table('affluences')->select('*')->where('selected_day', $request->date);
+        $reservationsArray = $reservationsQuerry->get();
+        $list = [];
+
+        foreach ($reservationsArray as $reservation) {
+            array_push($list, $reservation->selected_hour);
+        };
+
+        $sortedList = array_count_values($list);
+        return response($sortedList, 200);
+    }
+
+    /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
