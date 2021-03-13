@@ -8,4 +8,4 @@ Route::get('/reservation', [\App\Http\Controllers\api\ReservationController::cla
 
 Route::post('/reservation', [\App\Http\Controllers\api\ReservationController::class, 'store'])->name('api.reservation.store');
 
-Route::post('/reservation/annulation/{token}', [\App\Http\Controllers\api\ReservationController::class, 'destroy'])->name('api.reservation.destroy');
+Route::delete('/reservation/annulation/{token}', [\App\Http\Controllers\api\ReservationController::class, 'destroy'])->name('api.reservation.destroy');
